@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form {
+            background-color: bisque;
+            width: 300px;
+            padding: 5px 10px;
+        }
+        .input-birthday {
+            margin-left: 25px;
+        }
+        .input-name{
+            margin-left: 43px;
+        }
+        div{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<form action="#" method="get">
+    <h2>Đăng ký người dùng</h2>
+    <div>
+        <label for="name">Name</label>
+        <input class="input-name" type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="birthday">Birthday</label>
+        <input class="input-birthday" id="birthday" type="date">
+    </div>
+    <div>
+        <span>Gender</span>
+        <input id="male" type="radio" name="gender" value="male">
+        <label for="male">Male</label>
+        <input  id="female" type="radio" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+    <div>
+        <span>Hobbies</span>
+        <input id="football" type="checkbox" name="hobby" value="football">
+        <label for="football">Football</label>
+        <input id="shopping" type="checkbox" name="hobby" value="shopping">
+        <label for="shopping">Shopping</label>
+        <input id="music" type="checkbox" name="hobby" value="music">
+        <label for="music">Music</label>
+    </div>
+    <div>
+        <label for="className">Class name</label>
+        <select id="className">
+            <option value="">----Chọn lớp----</option>
+            <option value="C07">C0725G1</option>
+            <option value="C06">C0625G1</option>
+        </select><br>
+    </div>
+    <div>
+        <button type="submit">Gửi</button>
+        <button type="reset">Xoá</button>
+    </div>
+
+
+
+
+
+</form>
+</body>
+</html>
