@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let student1 = [1,"chánh",40];
+
+   // object literal
+   let student2 = {
+     id: 1,
+     name : "chánh",
+     age: 40,
+     study: function (subject){
+       console.log(this.name + " học môn "+ subject);
+     }
+   }
+
+   let SinhVien = function (id,name,age){
+       this.id = id;
+       this.name = name;
+       this.age = age;
+       this.study = function (subject){
+           console.log(this._name + " học môn "+ subject);
+       }
+   }
+
+   let sinhVien = new SinhVien(1,"Hải",27);
+
+   // tạo class
+   class Student {
+     // đặc điểm
+     _id;
+     _name;
+     _age;
+     constructor(id,name,age) {
+      this._id = id;
+      this._name = name;
+      this._age = age;
+     }
+     // setter
+       setId(id){
+         if (id>0){
+             this._id= id;
+         }
+
+       }
+       getId(){
+         return this._id;
+       }
+       setName(name){
+         this._name = name;
+       }
+       getName(){
+         return this._name;
+       }
+
+// hành vi
+     study(subject){
+       console.log(this._name + " học môn "+ subject);
+     }
+
+   }
+   let student3 = new Student(1,"Chánh 1", 34,"fsfsf");
+   console.log(student3.getName());
+   student3.setName("chánh 3");
+   console.log(student3.getName())
+</script>
+</body>
+</html>

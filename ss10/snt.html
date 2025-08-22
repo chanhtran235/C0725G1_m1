@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let n = 0;
+    // let countPrime = 0;
+    // while (countPrime < 20) {
+    //     let count = 0;
+    //     if (n >= 2) {
+    //         for (let i = 2; i <= Math.sqrt(n); i++) {
+    //             if (n % i === 0) {
+    //                 count++;
+    //                 break;
+    //             }
+    //         }
+    //         if (count === 0) {
+    //             countPrime++; // đếm số nt tìm thấy
+    //             console.log(n);
+    //         }
+    //     }
+    //     n++;
+    // }
+
+
+    let n =0;
+    let countPrime =0;
+    while (countPrime<20){
+        if (isPrime(n)){
+            console.log(n);
+            countPrime++;
+        }
+        n++;
+    }
+
+    function isPrime(number) {
+        if (number < 2) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

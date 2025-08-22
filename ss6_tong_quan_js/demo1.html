@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="name" value="tên mặc định" placeholder="nhập tên">
+<button onclick="getInfo()">Click</button>
+
+<script>
+    // hiển thị dữ liệu (output)
+    // alert("Hello");
+    // console.log("Hello2");
+    // document.write("hello3");
+    // document.getElementById('mess').innerText ="hello world";
+    // nhập dữ liệu từ bàn phím (input)
+    // let name = prompt("nhập tên");
+   // let name= document.getElementById("name").value;
+   //  alert("tên vừa nhập là : "+ name);
+   function getInfo(){
+       let name= document.getElementById('name').value;
+       alert('tên vừa nhập là : '+ name);
+   }
+    let conf = confirm("bạn có muốn xoá  học viên này không?");
+    alert(conf)
+</script>
+</body>
+
+</html>
